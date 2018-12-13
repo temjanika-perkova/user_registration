@@ -1,0 +1,14 @@
+.detailsForm{
+  font-family:"Arial Black",sans-serif;
+  background-image:url(http://doenv.gov.np/images/user.png) ;
+
+  border-style: 1px solid grey;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 0.8;
+  box-shadow: 2px 5px 5px 0px #eee;
+  max-width: 800px;
+  padding-top: 10px;
+  height: 500px;
+  margin-top: 166px;
+}

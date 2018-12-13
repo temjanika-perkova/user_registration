@@ -1,0 +1,56 @@
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+<div class="registerForm">
+
+  <form name="userForm">
+    <div class="form-group row">
+      <!--label class="col-sm-2 col-form-label" for="email">Email</label-->
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <input class="form-control" type="email" id="email" name="email" placeholder="Email"   [(ngModel)]="newUser.email" required>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <!--label class="col-sm-2 col-form-label" for="password">Password</label-->
+      <div class="col-sm-10">
+      <input class="form-control" type="password" id="password" name="password" placeholder="Password" required [(ngModel)]="newUser.password">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <!--label class="col-sm-2 col-form-label" for="name">Name</label-->
+      <div class="col-sm-10">
+      <input class="form-control" type="text" id="name" name="name" placeholder="Name" [(ngModel)]="newUser.name">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <!--label class="col-sm-2 col-form-label" for="surname">Surname</label-->
+      <div class="col-sm-10">
+      <input class="form-control" type="text" id="surname" name="surname" placeholder="Surname" [(ngModel)]="newUser.surname">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-1"></div>
+      <!--label class="col-sm-2 col-form-label" for="age">Age</label-->
+      <div class="col-sm-5">
+        <input class="form-control" type="number" id="age" name="age" placeholder="Age" [(ngModel)]="newUser.age">
+      </div>
+      <div class="col-sm-5">
+        <input class="form-control" type="text" id="country" name="country" placeholder="Country" [(ngModel)]="newUser.country">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <div class="col-sm-5"></div>
+      <div class="col-sm-3">
+      <input class="form-control btn-primary" type="submit" value="Submit" (click)="addUser()">
+      </div>
+    </div>
+  </form>
+</div>

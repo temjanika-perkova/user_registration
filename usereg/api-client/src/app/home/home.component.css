@@ -1,0 +1,18 @@
+.myimage {
+  background-image:url("https://i0.wp.com/www.zipdx.info/wp-content/uploads/Hello-Welcome.png?ssl=1");
+  border-style: 0.5px solid #486e80;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 0.8;
+  /*margin-top: 0px;*/
+  box-shadow: 2px 5px 5px 0px #eee;
+  max-width: 500px;
+  padding-top: 10px;
+  height: 360px;
+  /*margin-top: 166px;*/
+}
+.buttonRegister {
+  margin-top: 150px;
+  max-width: 500px;
+  opacity: 0.9;
+}
