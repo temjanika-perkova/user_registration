@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { RegisteruserComponent } from './registeruser/registeruser.component';
 import { HomeComponent } from './home/home.component';
 import { DetailsuserComponent } from './detailsuser/detailsuser.component';
+import {RouterTestingModule} from "@angular/router/testing";
 
 /**
  * These are the app routes for the different components
@@ -32,6 +33,7 @@ const appRoutes: Routes = [
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    RouterTestingModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [UserService],

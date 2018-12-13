@@ -5,6 +5,8 @@ import {Router, RouterModule} from "@angular/router";
 import {FormsModule} from "@angular/forms";
 import {CUSTOM_ELEMENTS_SCHEMA} from "@angular/core";
 import {RouterTestingModule} from "@angular/router/testing";
+import {UserService} from "../user.service";
+import {HttpClientModule} from "@angular/common/http";
 
 describe('DetailsuserComponent', () => {
   let component: DetailsuserComponent;
@@ -12,9 +14,9 @@ describe('DetailsuserComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [FormsModule,RouterTestingModule],
+      imports: [FormsModule,RouterTestingModule,HttpClientModule],
       declarations: [ DetailsuserComponent ],
-      providers: [Router],
+      providers: [UserService],
       schemas: [CUSTOM_ELEMENTS_SCHEMA]
     })
     .compileComponents();
