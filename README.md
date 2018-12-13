@@ -2,13 +2,16 @@
 
 User Registration using Spring Boot, MongoDB and AngularJS (angular cli)
 
-## mongodb command-line
-`use db_users`;
-`db.createCollection("users")`;
 
 ## command prompt for mongodb
-`mongod`
+In order to run the project, you need to install MongoDB and run it within this command:
+- `mongod`
 The mongodb instance will be running usually on the port 27017
+
+## mongodb command-line
+After starting the database, open the console `mongo` and execute the following commands:
+- `use db_users`; => this will create the database db_users
+- `db.createCollection("users")`; => this will create the collection `users` that will be used in this project
 
 ## IDE:
 IntelliJ IDEA
@@ -16,13 +19,14 @@ Open the project usereg
 Run the project inside usereg
 ## Spring Boot 
 Running usually on the port 8080
+The url of the Rest Api is: http://localhost:8080/users
 
 ## AngularJS
 The root of the project is `api-client`
 
 ### Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` inside the root directory `api-client` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ### Code scaffolding
 
@@ -34,11 +38,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ### Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test` in the root directory `api-client` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-### Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ### Further help
 
