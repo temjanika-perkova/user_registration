@@ -1,6 +1,6 @@
 ## user_registration
 
-User Registration using Spring Boot, MongoDB and AngularJS
+User Registration using Spring Boot, MongoDB and AngularJS (angular cli)
 
 ## mongodb command-line
 `use db_users`;
@@ -12,7 +12,8 @@ The mongodb instance will be running usually on the port 27017
 
 ## IDE:
 IntelliJ IDEA
-Run the project 
+Open the project usereg
+Run the project inside usereg
 ## Spring Boot 
 Running usually on the port 8080
 
