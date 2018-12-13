@@ -1,6 +1,10 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, inject, TestBed} from '@angular/core/testing';
 
 import { DetailsuserComponent } from './detailsuser.component';
+import {Router, RouterModule} from "@angular/router";
+import {FormsModule} from "@angular/forms";
+import {CUSTOM_ELEMENTS_SCHEMA} from "@angular/core";
+import {RouterTestingModule} from "@angular/router/testing";
 
 describe('DetailsuserComponent', () => {
   let component: DetailsuserComponent;
@@ -8,18 +12,21 @@ describe('DetailsuserComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DetailsuserComponent ]
+      imports: [FormsModule,RouterTestingModule],
+      declarations: [ DetailsuserComponent ],
+      providers: [Router],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(DetailsuserComponent);
-    component = fixture.componentInstance;
+    component = fixture.debugElement.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create', inject([RouterTestingModule],(router:RouterTestingModule) => {
     expect(component).toBeTruthy();
-  });
+  }));
 });
